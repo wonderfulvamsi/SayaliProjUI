@@ -160,7 +160,7 @@ const App = () => {
           That's pretty cool right? Connect your Ethereum wallet, give me an endorsement & get rewarded with crypto!
         </div>
         <input type="text" id="input" class="Input-text" placeholder="Enter your text here, e.g. She's a great team player!"/>
-        <label for="input" class="Input-label">First name</label>
+        <label for="input" class="Input-label"></label>
         <button className="waveButton" onClick={wave}>
           Submit
         </button>
@@ -173,10 +173,10 @@ const App = () => {
 
         {allWaves.map((wave, index) => {
           return (
-            <div key={index} style={{ backgroundColor: "OldLace", marginTop: "16px", padding: "8px" }}>
-              <div>Address: {wave.address}</div>
-              <div>Time: {wave.timestamp.toString()}</div>
-              <div>Endorsement: {wave.message}</div>
+            <div key={index} className="container" >
+              <h1>Address <p>{wave.address} </p></h1>
+              <h1>Time <p>{wave.timestamp.toString()}</p></h1>
+              <h1>Endorsement <p>{wave.message}</p></h1>
             </div>)
         })}
       </div>
