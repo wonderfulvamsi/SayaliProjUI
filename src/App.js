@@ -166,7 +166,7 @@ const App = () => {
         </button>
 
         {!currentAccount && (
-          <button className="waveButton" onClick={connectWallet}>
+          <button className="waveButton2" onClick={connectWallet}>
             Connect Wallet
           </button>
         )}
